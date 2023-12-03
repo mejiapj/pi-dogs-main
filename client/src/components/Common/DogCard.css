@@ -1,0 +1,89 @@
+/* Estilos para dispositivos pequeños (móviles) */
+@media (max-width: 575px) {
+  .dog-card {
+    max-width: calc(100% / 1);
+    display: inline-block;
+    text-align: center;
+    vertical-align: top; /* Alineación superior */
+    margin-bottom: 20px; /* Espaciado entre las tarjetas */
+  }
+}
+
+/* Estilos para dispositivos medianos (tabletas y portátiles pequeños) */
+@media (min-width: 576px) and (max-width: 991px) {
+  .dog-card {
+    max-width: calc(100% / 2.5);
+    display: inline-block;
+    text-align: center;
+    vertical-align: top; /* Alineación superior */
+    margin-bottom: 20px; /* Espaciado entre las tarjetas */
+  }
+}
+
+/* Estilos para dispositivos grandes (escritorio, portátiles grandes) */
+@media (min-width: 992px) {
+  .dog-card {
+    max-width: calc(100% / 5);
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px; /* Margen derecho */
+    margin-left: 10px; /* Margen izquierdo */
+    margin-bottom: 20px; /* Espaciado entre las tarjetas */
+    vertical-align: top; /* Alineación superior */
+  }
+}
+
+.dog-card {
+  width: 100%;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dog-card:hover {
+  transform: scale(1.05);
+  /* Efecto de escala al pasar el mouse */
+  border: 0.05px solid #555;
+  /* Agrega un borde al pasar el mouse */
+}
+
+.dog-card:active {
+  transform: scale(0.95);
+  /* Efecto de escala al seleccionar */
+}
+
+.dog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+}
+
+.dog-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.dog-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dog-card .temperaments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+  max-height: 60px;
+  overflow: hidden;
+  word-break: break-word;
+}

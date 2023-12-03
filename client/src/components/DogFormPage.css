@@ -1,0 +1,76 @@
+.dog-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dog-form {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+}
+
+.dog-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dog-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.dog-form label {
+  margin-bottom: 5px;
+}
+
+.dog-form input,
+.dog-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dog-form .button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dog-form .cancel-button {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dog-form .cancel-button:hover {
+  background-color: #d32f2f;
+}
+
+.dog-form button[type='submit'] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dog-form button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-align: center;
+}
